@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #006dcd;
+  --text-light: #faf9f6;
+  --text-dark: #28282b;
+  --text-secondary: #afafaf;
+  --text-footer: #838a93;
+  --footer-bg: #1f2937;
+}
+
+body {
+  position: relative;
+}
+
+/* HERO SECTION */
+
+.hero {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 8.5rem 10rem 2rem;
+  background-image: linear-gradient(#fff, var(--text-light));
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #838a93;
+}
+
+.hero .container {
+  padding: 6.5rem 10rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero .container .text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .container .text-container h1 {
+  color: var(--text-light);
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 600;
+  text-shadow: 0 0 10px #28282b75;
+}
+
+.hero .container .text-container p {
+  color: var(--text-light);
+  font-family: "lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-shadow: 0 0 5px var(--text-dark);
+}
+
+.hero .container .cta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .container .cta-container .cta-button {
+  padding: 0 30px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-light);
+  background-color: var(--primary);
+  font-family: "lexend", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: 0 0 25px rgba(40, 40, 43, 0.4);
+  transition: 0.3s ease;
+}
+
+.hero .container .cta-container .cta-button:hover {
+  background-color: rgba(250, 249, 246, 0.3);
+  backdrop-filter: blur(1rem);
+}
+
+/* ATTRACTION SECTION */
+
+.attraction {
+  width: 100%;
+  height: max-content;
+  background-color: var(--text-light);
+}
+
+.attraction .container {
+  width: 100%;
+  height: max-content;
+  padding: 70px 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.attraction .container h2 {
+  color: var(--text-dark);
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.attraction .container .card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 30px;
+}
+
+.attraction .container .card-container .card {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--text-dark);
+  border-radius: 1rem;
+  display: flex;
+  align-items: end;
+  box-shadow: 0 5px 5px rgba(40, 40, 43, 0.4);
+  transition: 0.3s ease;
+}
+
+.attraction .container .card-container .card:hover {
+  border-radius: 1rem 1rem 2.25rem 2.25rem;
+}
+
+.attraction .container .card-container .card:hover img {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.attraction .container .card-container .card:hover .text {
+  height: 100%;
+  padding: 30px 20px;
+  background-color: transparent;
+  color: var(--text-light);
+}
+
+.attraction .container .card-container .card:hover a {
+  bottom: 1rem;
+  width: calc(100% - 2rem);
+  border-radius: 1.25rem;
+  margin: 0 1rem;
+}
+
+.attraction .container .card-container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.attraction .container .card-container .card .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  height: 30%;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.attraction .container .card-container .card .text h3 {
+  font-family: "lexend", sans-serif;
+  margin-bottom: 0.2rem;
+}
+
+.attraction .container .card-container .card .text p {
+  font-family: "poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.attraction .container .card-container .card a {
+  position: absolute;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: var(--text-light);
+  font-family: "poppins", sans-serif;
+  bottom: -3rem;
+  margin: 0 0rem;
+  width: 100%;
+  height: 2.5rem;
+  font-weight: 600;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.attraction .container .card-container .card a:hover {
+  background-color: #0057a3;
+}
+
+/* PLAN YOUR VISIT */
+
+.visit {
+  width: 100%;
+  height: max-content;
+}
+
+.visit .container {
+  width: 100%;
+  height: max-content;
+  padding: 100px 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.visit .container .section-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visit .container .text-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.visit .container .text-header h2 {
+  color: var(--text-dark);
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.visit .container .text-header p {
+  color: var(--text-dark);
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.visit .container .button-header {
+  width: max-content;
+  height: max-content;
+}
+
+.visit .container .button-header a {
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--text-light);
+  background-color: var(--primary);
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.visit .container .button-header a:hover {
+  background-color: #0057a3;
+}
+
+.visit .container .content {
+  width: 100%;
+  padding: 2.5rem 0 0 0;
+}
+
+.visit .container .content .card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 20px;
+}
+
+.visit .container .content .card-container .card {
+  background-color: #f3f3f3;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.visit .container .content .card-container .card img {
+  height: 40px;
+  aspect-ratio: 1/1;
+  margin-bottom: 20px;
+}
+
+.visit .container .content .card-container .card h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 1.3rem;
+  color: #353538;
+}
+
+.visit .container .content .card-container .card p {
+  font-family: "poppins", sans-serif;
+  font-size: 1rem;
+  color: #6c6c6c;
+}
+
+@media (max-width: 1250px) {
+  .hero {
+    padding: 8.5rem 5rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 6rem 2rem;
+  }
+
+  .attraction .container {
+    padding: 50px 5rem;
+  }
+
+  .visit .container {
+    padding: 50px 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 8.5rem 3rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 4rem 2rem;
+  }
+
+  .attraction .container {
+    padding: 2rem 3rem;
+  }
+
+  .visit .container {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 8.5rem 2rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 3rem 2rem;
+  }
+
+  .hero .container .cta-container .cta-button {
+    padding: 0 20px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
+  .attraction .container {
+    padding: 2rem 2rem;
+  }
+
+  .attraction .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .visit .container {
+    padding: 2rem 2rem;
+  }
+
+  .visit .container .section-header {
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .visit .container .text-header {
+    width: 100%;
+  }
+
+  .visit .container .text-header h2 {
+    font-size: 1.5rem;
+  }
+}

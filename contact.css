@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #006dcd;
+  --text-light: #faf9f6;
+  --text-dark: #28282b;
+  --text-secondary: #afafaf;
+  --text-footer: #838a93;
+  --footer-bg: #1f2937;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #28282b;
+  position: relative;
+}
+/* --- Hero Section (Menggunakan Gambar Anda) --- */
+.hero-contact {
+  /* MENGGUNAKAN GAMBAR YANG DIUNGGAH DI SINI */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEHPOkkiQeoX4ARzoNxtBCVUVZV4PtyHceIQCuAzSn7NPU6e_43oViErUHAJ9ffLlJ0xjHip9TVuHKcjc9Yyj2zhDfkjuSlfTO4K5_reMuJ1tD675cuKg-sTtMC_RjHEUe6A94eErgY7-21XTvLEad64ChM4qzqRH6yYKsNQXA3r7XO8-jkUihJjGlg6JPqB5H2WseRXSMrKNOUOBnYvPhOH6yVSO8j2WoW6F9gBwwheEY9v9fb_TocUJHPU9JErG-44a8WVKT2oE")
+      no-repeat center center/cover;
+  height: 60dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #faf9f6;
+  padding: 0 2rem;
+}
+
+.hero-contact h1 {
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  margin-bottom: 10px;
+}
+
+.hero-contact p {
+  font-family: "lexend", sans-serif;
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* --- Contact Section --- */
+.contact-section {
+  display: grid;
+  grid-template-columns: 2fr 3fr; /* Pembagian kolom untuk kontak dan form */
+  gap: 70px;
+  padding: 60px 10rem;
+}
+
+.contact-info-panel h2,
+.message-form-panel h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.6em;
+}
+
+/* Info Items */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.info-item i {
+  font-size: 1.3em;
+  color: #33c75d; /* Hijau untuk ikon kontak */
+  margin-right: 15px;
+  padding-top: 2px;
+}
+
+.info-item strong {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+/* Social Links */
+.follow-heading {
+  margin-top: 30px;
+}
+
+.social-links a {
+  font-size: 1.4em;
+  margin-right: 18px;
+  color: #777;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #006dcd;
+}
+
+/* Message Form */
+.message-form-panel form input,
+.message-form-panel form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.message-form-panel form textarea {
+  resize: vertical;
+}
+
+.btn-send {
+  background-color: #ffc107; /* Kuning */
+  color: #333;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #ffc107;
+}
+
+/* --- FAQ Section --- */
+.faq-section {
+  padding: 80px 3rem;
+  text-align: center;
+}
+
+.faq-heading {
+  font-family: "lexend", sans-serif;
+  color: #006dcd;
+  font-size: 1.8em;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 18px 0;
+  text-align: left;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question i {
+  font-size: 0.6em;
+  color: #777;
+}
+
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 3rem 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .faq-heading {
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 1.2rem;
+  }
+}

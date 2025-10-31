@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Salatiga City — Plan Your Visit</title>
+
+    <link rel="stylesheet" href="visit.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" href="IMG/travel-bag.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <input type="checkbox" id="mobile" hidden />
+    <label for="mobile" id="overlay"></label>
+
+    <nav>
+      <div class="container">
+        <div class="logo-container">
+          <img src="IMG/travel-bag.png" alt="Discover Salatiga Logo" />
+          <p>Salatiga</p>
+        </div>
+
+        <!-- Tombol buka -->
+        <label for="mobile" class="open-sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="36px"
+            viewBox="0 -960 960 960"
+            width="36px"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <!-- Menu -->
+        <ul>
+          <label for="mobile" class="close-sidebar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 
+            224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attraction.html">Attractions</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search">
+          <div class="search-bar">
+            <button><img src="IMG/search-icon.svg" alt="" /></button>
+            <input type="text" placeholder="search on Salatiga" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero-bg"></div>
+          <div class="content">
+            <h1>Plan Your Perfect Salatiga Getaway</h1>
+            <p class="lead">
+              Your guide to an unforgettable experience in the heart of
+              Indonesia.
+            </p>
+            <a class="cta" href="#">Explore Now</a>
+          </div>
+        </section>
+
+        <!-- Section title -->
+        <div class="section-title">
+          <h2>Find Your Home Away from Home in Salatiga</h2>
+        </div>
+
+        <!-- Listings + Map -->
+        <section class="split">
+          <aside class="list-card">
+            <article class="place">
+              <img
+                class="thumb"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5-SxGxDzFiaHodOr_YMGH794cnMOpMxlsLpOxfDQmh5ZrPYXbhVIXKTdridZ-l81mmThAlABYAcGCHHNJU8o3FiB1NTE_-6qNCXVqr1R1EgLVBrImUG1yw72yNBGt-56meoWUMJgXUi2mgCYenbWlZ3W-6OHFU4yajYpZAgrhPlkn1fzC3ZLJsgjyIYcqW-AX7tVOEBGEwEmiHT91htpcxoyzj5CYzpdpWZFFaBf0gNcd7kldgI-XKGRoaentr_udIxNkMtlc6To"
+                alt="Kayu Arum Resort"
+              />
+              <div class="meta">
+                <h4>Kayu Arum Resort</h4>
+                <p>Luxury resort with stunning mountain views.</p>
+                <div class="rating">★ 4.5</div>
+              </div>
+            </article>
+
+            <article class="place">
+              <img
+                class="thumb"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9UkPQQT7AQlDM9upLZD9026ryznHaOj67Liz7pPcpzTz3N5lTZ5lAWKXK63XL-dHcDHZp8ButJ6t2MouAcH4zFkIsRfQZfkkikrQRgOm2x9C2BzFZbgNAW2C8Jiz3RPbzavTKyno9QA9XcAtKWg6kPnzRSRBoGyHYEjNOHkHiwBJPCn_CbYB0aYCdqX4WxsVwuQNNwe7-WjBCl60EtMJNO-LE8_5NF6a4qBMwXhNtrGAAfgs1XTTfdNEOv5ofXJNT03KMWoU5P2U"
+                alt="Omah Kembang"
+              />
+              <div class="meta">
+                <h4>Omah Kembang</h4>
+                <p>Cozy guesthouse with a beautiful garden.</p>
+                <div class="rating">★ 4.8</div>
+              </div>
+            </article>
+
+            <article class="place">
+              <img
+                class="thumb"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdzOthazQp-XFBFNgy7cM1msx7FP0I07jc8QVsSxZMvk1rqHXSupA0sfm_j_0vpHROEzh6OJqxAciuCTiW7hATuKfPIW4iXBEparJWzCynrmPy2oD1Qm7HlFqAIDqvgo5lFHrj9QAqldjkmMMf_Kfnm3uNCkkoOey5Ogr6ewVJCojCbK7Ww0DyYXxSjIinq3D1HbD_D2FRxhfTYPXDC02jRwiZoo6wyKzItiE3wq07PWieqSLTHG-yq6z-4LhGinduNkkrj56oZco"
+                alt="Le Ensérune Hotel"
+              />
+              <div class="meta">
+                <h4>Le Ensérune Hotel</h4>
+                <p>Stylish boutique hotel in the city center.</p>
+                <div class="rating">★ 4.6</div>
+              </div>
+            </article>
+          </aside>
+
+          <div class="map-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63315.934766327766!2d110.45588551478039!3d-7.326251726491982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a787e692c9c69%3A0xf6a53e23a0c4462c!2sSalatiga%2C%20Salatiga%20City%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1761704192282!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </section>
+
+        <!-- Getting to Salatiga -->
+        <div class="section-title">
+          <h2>Getting to Salatiga: A Breeze</h2>
+          <p class="muted">Your guide on how to get to Salatiga.</p>
+        </div>
+
+        <section class="transport-grid">
+          <div class="transport">
+            <div class="icon">✈️</div>
+            <h4>By Air</h4>
+            <p>
+              The nearest airport is Achmad Yani International Airport in
+              Semarang (SRG), about an hour’s drive from Salatiga.
+            </p>
+          </div>
+          <div class="transport">
+            <div class="icon">🚆</div>
+            <h4>By Train</h4>
+            <p>
+              Major train stations in Semarang and Solo provide easy access.
+              From there, take a bus or taxi to Salatiga.
+            </p>
+          </div>
+          <div class="transport">
+            <div class="icon">🚌</div>
+            <h4>By Bus</h4>
+            <p>
+              Regular bus services connect Salatiga with major cities in Java,
+              offering an affordable travel option.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="desc">
+          <h3>Salatiga City</h3>
+          <p>
+            Discover the beauty and charm of Salatiga. Your adventure starts
+            here.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="attraction.html">Attractions</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><img src="IMG/instagram.png" alt="" /></a>
+            <a href="#"><img src="IMG/twitter.png" alt="" /></a>
+            <a href="#"><img src="IMG/facebook.png" alt="" /></a>
+          </div>
+          <p>&copy; 2025 Salatiga City. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

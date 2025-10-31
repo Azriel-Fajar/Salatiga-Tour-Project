@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Salatiga</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" href="IMG/travel-bag.png" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <input type="checkbox" id="mobile" hidden />
+    <label for="mobile" id="overlay"></label>
+
+    <nav>
+      <div class="container">
+        <div class="logo-container">
+          <img src="IMG/travel-bag.png" alt="Discover Salatiga Logo" />
+          <p>Salatiga</p>
+        </div>
+
+        <!-- Tombol buka -->
+        <label for="mobile" class="open-sidebar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="36px"
+            viewBox="0 -960 960 960"
+            width="36px"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+          </svg>
+        </label>
+
+        <!-- Menu -->
+        <ul>
+          <label for="mobile" class="close-sidebar">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 
+            224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attraction.html">Attractions</a></li>
+          <li><a href="culture.html">Culture</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="search">
+          <div class="search-bar">
+            <button><img src="IMG/search-icon.svg" alt="" /></button>
+            <input type="text" placeholder="search on Salatiga" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="IMG/merbabu.png" alt="" />
+      <div class="container">
+        <div class="text-container">
+          <h1>De Schoonste Stad van Midden - Java</h1>
+          <p>or "The Most Beautiful City in Central Java, Indonesia"</p>
+        </div>
+        <div class="cta-container">
+          <a href="#attraction" class="cta-button">Explore Salatiga</a>
+        </div>
+      </div>
+    </section>
+
+    <form action=""></form>
+
+    <!-- Attraction Section -->
+    <section class="attraction" id="attraction">
+      <div class="container">
+        <h2>Featured Attractions</h2>
+        <div class="card-container">
+          <!-- Card 1 -->
+          <div class="card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjiaLSBOyKRSGvzwe2ouDsBTCYlNjgvEBQ63RKkJwXtbWlHCHp1Cfw-pZDqTuWl5ZQlV-xDcYSvUIg_cR_pU1rtZqupbTpJMjziAP4SBJWX_1A3AfM6_NOOseNI8EI5dAb5pkwGISZK49MXcyfaqJ2uXDT6HA3REuPsGhD3QkuN96ldK7o2VuyB_cDBp67tJQH3q2H48OHHQxEpvfaI4VewjolnzzpZn--n-BvOInfyEMxxrJPytxAVRkbPhVXY7Zve1ysZvsuojU"
+              alt=""
+              loading="lazy"
+            />
+            <div class="text">
+              <h3>Kopeng Treetop Adventure Park</h3>
+              <p>
+                An exciting outdoor adventure park with treetop obstacles and
+                ziplines.
+              </p>
+            </div>
+            <a href="attraction.html" class="card-button">Explore</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUI2w6LfoVA-BXyBnjbepJOByRG5jdtMkmgsxikCM8FbT-SCkcsVKcE5bglaR699y-NMvs541aGn0hIueHoI8gP9CUXYDyvaMqKX9IIs3EjkQU7Lywy_6O-CibfjcvyzavjwQIzkGAttoD_36Qs0A4kB2AeVDJNoji2silGK_erMlNTLZiLz7maWqoZeIma6wKArh5cAYM7WaQG4Zlf286ZADzY9HZZW3kJgSdfiHwiG9ExapEV7fXB_W4oaRSyLl9GGwmjoxKWVI"
+              alt=""
+              loading="lazy"
+            />
+            <div class="text">
+              <h3>Selasar Kartini</h3>
+              <p>
+                A vibrant public space in the heart of the city, perfect for a
+                leisurely stroll.
+              </p>
+            </div>
+            <a href="attraction.html" class="card-button">Explore</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnhKmcpyv9UqFq_BXCnyjKAJNAzqkPL8BFPr4Zb637mDcpKjudFagxnOjo0okMmRzKToah0_7QO1gQgFj60BetJEat31XQ4QF7ke_rMUmYCWVqaH8Z2EUberBkgnS62D_cI6KZXSZJzmbc9QKjO8Scw3VyxSEw0WgKcLj9p4Ht16drh_3C5QVqXY7fdrBxG93JWAMM1gxjEn1F0sK1cJBEPpal4SN-OXlLxCGwK4cMPJoBCpaqdRzZ97uqzpb6ZmGsHFwt6t__EgE"
+              alt=""
+              loading="lazy"
+            />
+            <div class="text">
+              <h3>Gereja Ayam (Chicken Church)</h3>
+              <p>
+                A unique prayer house in the shape of a giant chicken, offering
+                panoramic views.
+              </p>
+            </div>
+            <a href="attraction.html" class="card-button">Explore</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan Your Visit -->
+    <section class="visit">
+      <div class="container">
+        <!-- Header -->
+        <div class="section-header">
+          <div class="text-header">
+            <h2>Plan Your Visit</h2>
+            <p>
+              Everything you need to know to make your trip to Salatiga
+              unforgettable
+            </p>
+          </div>
+          <div class="button-header">
+            <a href="visit.html">See More Travel Tips</a>
+          </div>
+        </div>
+        <!-- Content -->
+        <div class="content">
+          <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+              <img src="IMG/calendar.png" alt="" />
+              <h3>Best Time to Visit</h3>
+              <p>
+                The best time to visit Salatiga is during the dry season, from
+                June to September.
+              </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+              <img src="IMG/map.png" alt="" />
+              <h3>Getting There</h3>
+              <p>
+                Salatiga is easily accessible by car or bus from major cities
+                like Semarang or Solo.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+              <img src="IMG/furniture.png" alt="" />
+              <h3>Where to Stay</h3>
+              <p>
+                From cozy guesthouses to modern hotels, find the perfect
+                accommodation for your stay.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="desc">
+          <h3>Salatiga City</h3>
+          <p>
+            Discover the beauty and charm of Salatiga. Your adventure starts
+            here.
+          </p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="attraction.html">Attractions</a></li>
+            <li><a href="culture.html">Culture</a></li>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><img src="IMG/instagram.png" alt="" /></a>
+            <a href="#"><img src="IMG/twitter.png" alt="" /></a>
+            <a href="#"><img src="IMG/facebook.png" alt="" /></a>
+          </div>
+          <p>&copy; 2025 Salatiga City. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

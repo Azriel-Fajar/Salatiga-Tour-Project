@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #006dcd;
+  --text-light: #faf9f6;
+  --text-dark: #28282b;
+  --text-secondary: #565656;
+  --text-footer: #838a93;
+  --footer-bg: #1f2937;
+}
+
+body {
+  position: relative;
+}
+
+/* HERO */
+
+.hero {
+  width: 100%;
+  height: 100dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 8.5rem 10rem 2rem;
+  background-image: linear-gradient(var(--text-light), #fff);
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px #838a93;
+}
+
+.hero .container {
+  padding: 6.5rem 10rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero .container .text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .container .text-container h1 {
+  color: var(--text-light);
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-weight: 600;
+  text-shadow: 0 0 10px #28282b75;
+}
+
+.hero .container .text-container p {
+  color: var(--text-light);
+  font-family: "lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-shadow: 0 0 5px var(--text-dark);
+}
+
+.hero .container .cta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.hero .container .cta-container .cta-button {
+  padding: 0 30px;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-dark);
+  background-color: #ffd700;
+  font-family: "lexend", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  box-shadow: 0 0 25px rgba(40, 40, 43, 0.4);
+  transition: 0.3s ease;
+}
+
+.hero .container .cta-container .cta-button:hover {
+  background-color: rgba(250, 249, 246, 0.3);
+  backdrop-filter: blur(1rem);
+  color: var(--text-light);
+}
+
+/* HERITAGE */
+
+.heritage {
+  width: 100%;
+  background-image: linear-gradient(#fff, var(--text-light));
+}
+
+.heritage .container {
+  width: 100%;
+  padding: 4rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.heritage .container .text-container {
+  width: 100%;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.heritage .container .text-container h2 {
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.heritage .container .text-container p {
+  font-family: "lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 800px;
+}
+
+.heritage .container .card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+  gap: 30px;
+}
+
+.heritage .container .card-container .card {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--text-dark);
+  border-radius: 1rem;
+  box-shadow: 0 5px 5px rgba(40, 40, 43, 0.4);
+  transition: 0.3s ease;
+}
+
+.heritage .container .card-container .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.heritage .container .card-container .card .card-text {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  transition: 0.5s ease;
+}
+
+.heritage .container .card-container .card:hover .card-text {
+  bottom: 0;
+}
+
+.heritage .container .card-container .card:hover img {
+  transform: scale(1.1);
+}
+
+.traditional .card-text {
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 51, 102, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.historical .card-text {
+  background-image: linear-gradient(
+    0deg,
+    rgba(51, 102, 51, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.local .card-text {
+  background-image: linear-gradient(
+    0deg,
+    rgba(139, 69, 19, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.heritage .container .card-container .card .card-text h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.heritage .container .card-container .card .card-text p {
+  font-family: "lexend", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* CALENDAR */
+
+.calendar {
+  width: 100%;
+  background-color: var(--text-light);
+}
+
+.calendar .container {
+  width: 100%;
+  gap: 2rem;
+  padding: 0rem 10rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar .container h2 {
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+}
+
+.calendar .container .card-container {
+  width: 100%;
+  display: grid;
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0px 20px rgba(40, 40, 43, 0.2);
+}
+
+.calendar .container .card-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.calendar .container .card-container .card .date {
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(6, 103, 30);
+}
+
+.calendar .container .card-container .card h3 {
+  font-family: "poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.calendar .container .card-container .card .desc {
+  font-family: "lexend", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.calendar .container .card-container .card .btn {
+  width: max-content;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-light);
+  background-color: var(--primary);
+  transition: 0.3s ease;
+}
+
+/* MAP */
+
+.map {
+  width: 100%;
+  background-image: linear-gradient(var(--text-light), #fff);
+}
+
+.map .container {
+  width: 100%;
+  padding: 0 10rem 10rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.map .container h2 {
+  font-family: "poppins", sans-serif;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 2rem 0;
+}
+
+.map .container iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 1rem;
+}
+
+@media (max-width: 1250px) {
+  .hero {
+    padding: 8.5rem 5rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 6rem 2rem;
+  }
+
+  .heritage .container {
+    padding: 50px 5rem;
+  }
+
+  .calendar .container {
+    padding: 0rem 5rem 3rem;
+  }
+
+  .map .container {
+    padding: 0 5rem 5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 8.5rem 3rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 4rem 2rem;
+  }
+
+  .heritage .container {
+    padding: 2rem 3rem;
+  }
+
+  .calendar .container {
+    padding: 0rem 3rem 2rem;
+  }
+
+  .map .container {
+    padding: 0 3rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 8.5rem 2rem 2rem;
+  }
+
+  .hero .container {
+    padding: 6.5rem 3rem 2rem;
+  }
+
+  .hero .container .cta-container .cta-button {
+    padding: 0 20px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+  }
+
+  .heritage .container {
+    padding: 2rem 2rem;
+  }
+
+  .heritage .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .calendar .container {
+    padding: 0rem 2rem 2rem;
+  }
+
+  .map .container {
+    padding: 0 2rem 2rem;
+  }
+}
